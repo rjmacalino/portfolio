@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raymond Macalino — Web & Game Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav id="navbar" aria-label="Primary navigation">
+    <span id="nav-name" aria-hidden="true">Raymond Macalino</span>
+    <ul role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hi, I'm</p>
+      <h1>Raymond Macalino</h1>
+      <p class="hero-role">Web &amp; Game Developer</p>
+      <p class="hero-tagline">I build things for the web — and sometimes for virtual worlds.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" aria-label="About me">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I'm a solution-oriented developer with 2+ years of professional web experience and a
+            background that spans data analysis, e-commerce, and game scripting. I care about
+            writing clean, readable code and building interfaces that actually feel good to use.
+          </p>
+          <p>
+            These days I'm focused on expanding my full-stack skills with the MERN stack while
+            continuing to grow a Lua scripting community I've been running since 2023. I'm based in
+            Melbourne and looking for a junior developer role where I can contribute from day one
+            and keep learning.
+          </p>
+        </div>
+        <ul class="about-stats" role="list" aria-label="Quick facts">
+          <li><span class="stat-value">2+</span><span class="stat-label">Years Experience</span></li>
+          <li><span class="stat-value">200+</span><span class="stat-label">Script Users</span></li>
+          <li><span class="stat-value">MERN</span><span class="stat-label">Stack</span></li>
+          <li><span class="stat-value">MEL</span><span class="stat-label">Melbourne, AU</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" aria-label="Technical skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid reveal-group">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul role="list">
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Redux</li>
+            <li>Tailwind CSS</li>
+            <li>SCSS</li>
+            <li>Material-UI</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul role="list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>SQL Server</li>
+            <li>REST APIs</li>
+            <li>JWT Auth</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Other</h3>
+          <ul role="list">
+            <li>Lua Scripting</li>
+            <li>Git &amp; GitHub</li>
+            <li>Shopify</li>
+            <li>WordPress</li>
+            <li>Netlify</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid reveal-group">
+
+        <article class="card" aria-label="Pomodoro Flow project">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">⏳</span>
+            <span class="badge badge-live">Live</span>
+          </div>
+          <h3>Pomodoro Flow</h3>
+          <p>A focus timer with a circular SVG progress ring, three switchable themes, and a
+          localStorage-backed session log. Built with pure HTML, CSS, and vanilla JS.</p>
+          <ul class="tags" role="list" aria-label="Technologies used">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>LocalStorage</li><li>SVG</li>
+          </ul>
+          <a href="projects/pomodoro/index.html" class="btn btn-card" target="_blank" rel="noopener">
+            View Project
+          </a>
+        </article>
+
+        <article class="card" aria-label="Lua Game Scripting Suite project">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🎮</span>
+            <span class="badge badge-ongoing">Ongoing</span>
+          </div>
+          <h3>Lua Game Scripting Suite</h3>
+          <p>A growing collection of custom Lua scripts for a popular online multiplayer game.
+          Serving 200+ active users with regular updates, game logic systems, player progression,
+          and automated server tools.</p>
+          <ul class="tags" role="list" aria-label="Technologies used">
+            <li>Lua</li><li>Source Engine</li><li>Game Modding</li><li>Server-side Scripting</li>
+          </ul>
+          <span class="btn btn-card btn-disabled" aria-disabled="true">Personal Project</span>
+        </article>
+
+        <article class="card card-placeholder" aria-label="Coming soon project">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🔨</span>
+            <span class="badge badge-progress">In Progress</span>
+          </div>
+          <h3>Coming Soon</h3>
+          <p>Something new is being built. Check back soon.</p>
+          <ul class="tags" role="list" aria-label="Technologies used">
+            <li>React</li><li>Node.js</li><li>MongoDB</li>
+          </ul>
+          <span class="btn btn-card btn-disabled" aria-disabled="true">In Progress</span>
+        </article>
+
+        <article class="card card-placeholder" aria-label="Coming soon project">
+          <div class="card-header">
+            <span class="card-icon" aria-hidden="true">🔨</span>
+            <span class="badge badge-progress">In Progress</span>
+          </div>
+          <h3>Coming Soon</h3>
+          <p>Another project on the way. Stay tuned.</p>
+          <ul class="tags" role="list" aria-label="Technologies used">
+            <li>TypeScript</li><li>Next.js</li><li>Tailwind</li>
+          </ul>
+          <span class="btn btn-card btn-disabled" aria-disabled="true">In Progress</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" aria-label="Contact">
+    <div class="container contact-inner">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub reveal">I'm open to junior developer roles and interesting collaborations.
+      Drop me a line — I usually reply within a day.</p>
+      <div class="contact-links">
+        <a href="mailto:rjhaymacalino@gmail.com" class="btn btn-primary">
+          Email Me
+        </a>
+        <button id="btn-copy-email" class="btn btn-outline" aria-label="Copy email address to clipboard">
+          Copy Email
+        </button>
+      </div>
+      <ul class="social-links" role="list">
+        <li>
+          <a href="https://github.com/rjmacalino" target="_blank" rel="noopener" aria-label="GitHub profile">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://rjmacalino.netlify.app" target="_blank" rel="noopener" aria-label="Live portfolio">
+            Live Portfolio
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>Built by Raymond Macalino &middot; 2025 &middot; Pure HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
