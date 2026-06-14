@@ -444,6 +444,35 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
+/* ── Card actions: Live Demo + Code ── */
+.card-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+}
+.btn-code {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+  background: transparent;
+  color: var(--subtext);
+  border: 1.5px solid var(--border);
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+}
+.btn-code:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(56, 189, 248, 0.08);
+  transform: translateY(-1px);
+}
+.btn-code:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 /* ── Contact ── */
 #contact { background: var(--bg-card-2); }
 
