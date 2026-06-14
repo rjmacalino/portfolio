@@ -1,9 +1,9 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('%c⏳ Stay focused – you\'re doing great!', 'color: #4ade80; font-size: 1.2rem; font-weight: bold;');
+  console.log('%c⏳ Stay focused, you\'re doing great!', 'color: #4ade80; font-size: 1.2rem; font-weight: bold;');
 
-  // ── Constants ──────────────────────────────────────────────────────────────
+  // Constants
 
   const RADIUS = 95;
   const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const BREAK_MESSAGES = [
     'Take a breath, you earned it.',
     'Step away. Stretch. Hydrate.',
-    'Seriously — close the tab for 5 minutes.',
+    'Seriously, close the tab for 5 minutes.',
     'Rest is part of the work.',
   ];
 
   const THEME_ICONS = { forest: '🌿', night: '🌙', sunset: '🌅' };
 
-  // ── DOM refs ───────────────────────────────────────────────────────────────
+  // DOM refs
 
   const timeDisplay   = document.getElementById('time-display');
   const ringProgress  = document.getElementById('ring-progress');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeIcon     = document.getElementById('theme-icon');
   const themeBtns     = document.querySelectorAll('.theme-switcher button');
 
-  // ── Timer class ───────────────────────────────────────────────────────────
+  // Timer class
 
   class Timer {
     FOCUS_DURATION = 25 * 60;
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const str = `${mm}:${ss}`;
 
       timeDisplay.textContent  = str;
-      document.title           = `${str} — Pomodoro Flow`;
+      document.title           = `${str} · Pomodoro Flow`;
       modeLabel.textContent    = this.mode === 'focus' ? 'Focus' : 'Break';
 
       const progress = this.timeLeft / this._totalDuration;
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this._render();
         this.start();
       } else {
-        // Break finished — park in focus mode, let user decide when to go again
+        // break finished. stay in focus mode and let the user start the next one
         this.mode     = 'focus';
         this.timeLeft = this.FOCUS_DURATION;
         breakMessage.hidden = true;
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // ── Audio beep ─────────────────────────────────────────────────────────────
+  // Audio beep
 
   function _playBeep() {
     try {
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 600);
   }
 
-  // ── Focus log ──────────────────────────────────────────────────────────────
+  // Focus log
 
   function _loadLog() {
     try { return JSON.parse(localStorage.getItem('pomodoroLog') || '[]'); }
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Theme switching ────────────────────────────────────────────────────────
+  // Theme switching
 
   function _applyTheme(theme) {
     document.body.dataset.theme = theme;
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => _applyTheme(btn.dataset.theme));
   });
 
-  // ── Bootstrap ─────────────────────────────────────────────────────────────
+  // Bootstrap
 
   _initTheme();
   _renderLog();

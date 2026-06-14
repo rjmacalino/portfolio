@@ -1,6 +1,4 @@
-/* ============================================================
-   Raymond Macalino — portfolio (neon / glassmorphism theme)
-   ============================================================ */
+/* portfolio styles. dark theme with glass panels and neon gradients. */
 
 :root {
   --bg:        #0a0a12;
@@ -55,7 +53,7 @@ ul { list-style: none; }
   -webkit-text-fill-color: transparent;
 }
 
-/* ── Nav ── */
+/* Nav */
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -96,7 +94,7 @@ ul { list-style: none; }
 #navbar a:hover, #navbar a.active { color: var(--text); }
 #navbar a:hover::after, #navbar a.active::after { width: 100%; }
 
-/* ── Hero ── */
+/* Hero */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -142,7 +140,7 @@ ul { list-style: none; }
 }
 .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-/* ── Buttons ── */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.9rem;
@@ -175,7 +173,7 @@ ul { list-style: none; }
 }
 .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
-/* ── Section titles ── */
+/* Section titles */
 .section-title {
   font-size: clamp(1.8rem, 5vw, 2.6rem);
   font-weight: 900;
@@ -193,7 +191,7 @@ ul { list-style: none; }
 
 section[id] { padding: 5.5rem 0; position: relative; z-index: 1; }
 
-/* ── About ── */
+/* About */
 .about-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -222,7 +220,7 @@ section[id] { padding: 5.5rem 0; position: relative; z-index: 1; }
 }
 .stat-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 
-/* ── Skills ── */
+/* Skills */
 .skills-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem;
 }
@@ -256,7 +254,7 @@ section[id] { padding: 5.5rem 0; position: relative; z-index: 1; }
   transform: translateY(-2px);
 }
 
-/* ── Projects ── */
+/* Projects */
 .projects-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem;
 }
@@ -322,7 +320,7 @@ section[id] { padding: 5.5rem 0; position: relative; z-index: 1; }
 .btn-card:focus-visible, .btn-code:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .btn-disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; align-self: flex-start; }
 
-/* ── Contact ── */
+/* Contact */
 #contact .container { text-align: center; }
 .contact-sub { color: var(--muted); font-size: 1.05rem; max-width: 480px; margin: 0 auto 2rem; }
 .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
@@ -334,7 +332,7 @@ section[id] { padding: 5.5rem 0; position: relative; z-index: 1; }
 }
 .social-links a:hover { color: var(--accent-2); border-color: var(--accent-2); }
 
-/* ── Footer ── */
+/* Footer */
 footer {
   text-align: center; padding: 2.5rem 1.5rem;
   color: var(--muted); font-size: 0.85rem;
@@ -342,7 +340,7 @@ footer {
   position: relative; z-index: 1;
 }
 
-/* ── Reveal ── */
+/* Reveal */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 .reveal-group > * { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
@@ -351,7 +349,7 @@ footer {
 .reveal-group.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.2s; }
 .reveal-group.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.3s; }
 
-/* ── Responsive ── */
+/* Responsive */
 @media (max-width: 760px) {
   #navbar { padding: 1rem 1.25rem; }
   #navbar ul { gap: 1.1rem; }

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyBtn  = document.getElementById('btn-copy-email');
   const EMAIL    = 'rjhaymacalino@gmail.com';
 
-  // ── Nav: show name + border once hero scrolls out ────────────────────────
+  // Nav: show name + border once hero scrolls out
 
   const heroObserver = new IntersectionObserver(
     ([entry]) => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   heroObserver.observe(hero);
 
-  // ── Nav: highlight active section ────────────────────────────────────────
+  // Nav: highlight active section
 
   const sectionObserver = new IntersectionObserver(
     (entries) => {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(s => sectionObserver.observe(s));
 
-  // ── Scroll-in animations ─────────────────────────────────────────────────
+  // Scroll-in animations
 
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
-  // ── 3D tilt on project cards ──────────────────────────────────────────────
+  // 3D tilt on project cards
 
   const projectsGrid = document.querySelector('.projects-grid');
   if (projectsGrid) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Copy email to clipboard ───────────────────────────────────────────────
+  // Copy email to clipboard
 
   copyBtn.addEventListener('click', async () => {
     try {

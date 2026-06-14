@@ -1,4 +1,4 @@
-/* ── Custom properties: Forest (default) ── */
+/* Custom properties: Forest (default) */
 :root {
   --bg-start: #d1fae5;
   --bg-end: #a7f3d0;
@@ -13,7 +13,7 @@
   --shadow: rgba(6, 78, 59, 0.15);
 }
 
-/* ── Night theme ── */
+/* Night theme */
 [data-theme="night"] {
   --bg-start: #0f172a;
   --bg-end: #1e293b;
@@ -28,7 +28,7 @@
   --shadow: rgba(0, 0, 0, 0.4);
 }
 
-/* ── Sunset theme ── */
+/* Sunset theme */
 [data-theme="sunset"] {
   --bg-start: #fff1eb;
   --bg-end: #fde68a;
@@ -43,14 +43,14 @@
   --shadow: rgba(124, 45, 18, 0.15);
 }
 
-/* ── Reset ── */
+/* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ── Body ── */
+/* Body */
 body {
   min-height: 100vh;
   display: flex;
@@ -63,7 +63,7 @@ body {
   transition: background 0.4s ease, color 0.3s ease;
 }
 
-/* ── Header ── */
+/* Header */
 header {
   text-align: center;
   margin-bottom: 2rem;
@@ -82,7 +82,7 @@ h1 {
   font-style: italic;
 }
 
-/* ── Theme switcher ── */
+/* Theme switcher */
 .theme-switcher {
   display: flex;
   gap: 0.5rem;
@@ -118,7 +118,7 @@ h1 {
   outline-offset: 2px;
 }
 
-/* ── Main layout ── */
+/* Main layout */
 main {
   width: 100%;
   max-width: 400px;
@@ -127,7 +127,7 @@ main {
   gap: 1.5rem;
 }
 
-/* ── Timer section ── */
+/* Timer section */
 .timer-section {
   background: var(--card-bg);
   border-radius: 1.5rem;
@@ -138,7 +138,7 @@ main {
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* ── SVG ring ── */
+/* SVG ring */
 .ring-wrapper {
   position: relative;
   display: inline-flex;
@@ -159,7 +159,7 @@ main {
   transition: stroke-dashoffset 0.9s linear, stroke 0.4s ease;
 }
 
-/* ── Time display ── */
+/* Time display */
 #time-display {
   position: absolute;
   font-size: clamp(2.4rem, 8vw, 3.2rem);
@@ -172,7 +172,7 @@ main {
   user-select: none;
 }
 
-/* ── Mode label ── */
+/* Mode label */
 .mode-label {
   font-size: 0.85rem;
   font-weight: 600;
@@ -183,7 +183,7 @@ main {
   transition: color 0.3s ease;
 }
 
-/* ── Break message ── */
+/* Break message */
 .break-message {
   font-size: 0.95rem;
   color: var(--subtext);
@@ -192,7 +192,7 @@ main {
   min-height: 1.4em;
 }
 
-/* ── Control buttons ── */
+/* Control buttons */
 .controls {
   display: flex;
   gap: 0.75rem;
@@ -234,7 +234,7 @@ main {
   cursor: not-allowed;
 }
 
-/* ── Log section ── */
+/* Log section */
 .log-section {
   background: var(--card-bg);
   border-radius: 1.5rem;
@@ -312,7 +312,7 @@ main {
   outline-offset: 2px;
 }
 
-/* ── Desktop: side-by-side ── */
+/* Desktop: side-by-side */
 @media (min-width: 700px) {
   main {
     max-width: 760px;
