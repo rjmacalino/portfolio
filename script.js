@@ -57,6 +57,24 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
+  // ── 3D tilt on project cards ──────────────────────────────────────────────
+
+  const projectsGrid = document.querySelector('.projects-grid');
+  if (projectsGrid) {
+    projectsGrid.addEventListener('mousemove', (e) => {
+      const card = e.target.closest('.card');
+      if (!card) return;
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `perspective(700px) rotateY(${px * 5}deg) rotateX(${-py * 5}deg) translateY(-4px)`;
+    });
+    projectsGrid.addEventListener('mouseout', (e) => {
+      const card = e.target.closest('.card');
+      if (card && !card.contains(e.relatedTarget)) card.style.transform = '';
+    });
+  }
+
   // ── Copy email to clipboard ───────────────────────────────────────────────
 
   copyBtn.addEventListener('click', async () => {
