@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Precious Koala</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐨</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Precious Koala home">
+        <img src="assets/logo.png" alt="Precious Koala" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+        <span class="brand-text" style="display:none"><span class="brand-koala">🐨</span> Precious Koala</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="faqs.html">FAQs</a>
+        <span class="header-actions">
+          <a href="#" class="icon-btn" aria-label="Account">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3.2"/><path d="M6.5 18.5c1-2.6 3-3.7 5.5-3.7s4.5 1.1 5.5 3.7"/></svg>
+          </a>
+          <a href="cart.html" class="icon-btn cart-link" aria-label="Cart">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M2 3h2.2l2.4 12h11l2.4-9H6.5"/></svg>
+            <span class="cart-count" hidden>0</span>
+          </a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-band">
+    <h1>Your Cart</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Cart</p>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cart-grid" id="cart-view"><!-- rendered by script.js --></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>Precious Koala</h4>
+        <p>Dedicated to providing the best and safest eco-friendly baby products for your little ones.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="products.html">All Products</a><br>
+        <a href="index.html#why">Why Koala</a><br>
+        <a href="index.html#how">How to Use</a><br>
+        <a href="cart.html">Cart</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://preciouskoala.com" target="_blank" rel="noopener">preciouskoala.com</a><br>
+        <a href="mailto:preciouskoalashop@gmail.com">preciouskoalashop@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Precious Koala · This packaging is recyclable ♻️</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
