@@ -1,67 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="forest">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pomodoro Flow</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏳</text></svg>" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <header>
-    <h1>Pomodoro Flow <span id="theme-icon" aria-hidden="true">🌿</span></h1>
-    <p class="tagline">Deep work, made simple.</p>
-    <div class="theme-switcher" role="group" aria-label="Choose theme">
-      <button data-theme="forest" aria-pressed="true">Forest</button>
-      <button data-theme="night" aria-pressed="false">Night</button>
-      <button data-theme="sunset" aria-pressed="false">Sunset</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="timer-section" aria-label="Timer">
-      <div class="ring-wrapper">
-        <svg viewBox="0 0 220 220" width="220" height="220" aria-hidden="true">
-          <circle
-            class="ring-bg"
-            cx="110" cy="110" r="95"
-            fill="none"
-            stroke-width="12"
-          />
-          <circle
-            id="ring-progress"
-            cx="110" cy="110" r="95"
-            fill="none"
-            stroke-width="12"
-            stroke-linecap="round"
-          />
-        </svg>
-        <div
-          id="time-display"
-          role="timer"
-          aria-live="off"
-          aria-label="Time remaining"
-        >25:00</div>
-      </div>
-
-      <p id="mode-label" class="mode-label">Focus</p>
-      <p id="break-message" class="break-message" aria-live="polite" hidden></p>
-
-      <div class="controls">
-        <button id="btn-start" aria-label="Start timer">Start</button>
-        <button id="btn-pause" aria-label="Pause timer" disabled>Pause</button>
-        <button id="btn-reset" aria-label="Reset timer">Reset</button>
-      </div>
-    </section>
-
-    <section class="log-section" aria-label="Focus log">
-      <h2>Focus Log</h2>
-      <ul id="focus-log" aria-label="Completed focus sessions"></ul>
-      <button id="btn-clear-log" aria-label="Clear focus log">Clear Log</button>
-    </section>
-  </main>
-
-  <script src="script.js" defer></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/projects/pomodoro/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <script type="module" crossorigin src="/projects/pomodoro/assets/index-DJS35D77.js"></script>
+    <link rel="stylesheet" crossorigin href="/projects/pomodoro/assets/index-Qlugv1yt.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
